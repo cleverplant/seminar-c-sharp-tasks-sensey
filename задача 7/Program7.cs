@@ -35,17 +35,5 @@ Console.WriteLine("результат nmb_1 => " + nmb_1 );
 
 /* попытка создать функцию - неудачно*/
 
-// int n_1 = Convert.ToInt32(Console.ReadLine());
-// int MyFunction(int n_2);
-//     int n_2 = n_1 * -1;    
-
-//     while (n_2 <= n_1) // <= 
-// {
-//     Console.Write("результат: " + n_2); 
-//     n_2 = n_2 + 1;
-//     return ;
-// }
-// Console.Write(MyFunction(5)); 
-
 
 
