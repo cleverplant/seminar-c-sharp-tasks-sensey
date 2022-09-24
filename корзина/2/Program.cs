@@ -13,9 +13,9 @@
 // }
 // Console.Write(test1());
 
-int number =10;
-test(number);
-int test(int n)
+// int number =10;
+// test(number);
+int test(int n = 4)
 {
     if (n >= 10)
         return 0;
