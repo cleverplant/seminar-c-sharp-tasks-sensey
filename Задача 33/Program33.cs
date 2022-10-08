@@ -14,10 +14,11 @@ void zadacha33()
         int[] numbers = new int[sise];/* массив создан */
         Console.WriteLine($"{sise} <- размер массива");
         Console.WriteLine($"{check} <- ищем это число");
-        
+
         FillArray(numbers);
         PrintArray(numbers);
-        CheckArray(numbers, check);
+        Check(numbers, check);
+        //CheckArray(numbers, check);
     }
 
     void FillArray(int[] num) /* массив на заполнение */
@@ -44,7 +45,7 @@ void zadacha33()
         for (int i = 0; i < numbers.Length; i++)
         {
             if (numbers[i] == check)
-                flag = true;
+                flag = true;// лучше писать просто flag - он и так true - он сам и есть true
             // if (numbers[i] == check)
             // c
             // if (numbers[i] == check)
@@ -55,7 +56,26 @@ void zadacha33()
         else
             Console.WriteLine("число НЕ найдено");
     }
+
+    void Check(int[] numbers, int check)
+    {
+        bool flag = false;
+        int i = 0;
+        while (!flag && i < numbers.Length)//! это отрицание - типа NOT
+        {
+            if (numbers[i] == check)
+            {
+                flag = true;
+            }
+            i++;
+        }
+        if (flag)//писать просто flag - он и так true - он сам и есть true
+            Console.WriteLine("число найдено");
+        else
+            Console.WriteLine("число НЕ найдено");
+    }
 }
+
 zadacha33();
 
 
