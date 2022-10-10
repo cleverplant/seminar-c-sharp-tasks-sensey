@@ -1,6 +1,7 @@
 ﻿/*
 // rows - строки
 // columns -столбцы
+
 */
 
 void PrintRandomArray()
